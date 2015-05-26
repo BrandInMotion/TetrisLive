@@ -1,0 +1,79 @@
+.blockrain-game-holder {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  color: #000000;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+/* Buttons */
+.blockrain-btn {
+  position: relative;
+  display: inline-block;
+  background: none;
+  color: #000000;
+  text-decoration: none;
+  border: 2px solid #000000;
+  padding: 15px 30px;
+  font-size: 18px;
+  text-align: center;
+  cursor: default;
+}
+
+
+
+
+
+/* Score */
+.blockrain-score-holder {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  text-align: right;
+}
+.blockrain-score-msg {
+  font-size: 14px;  
+  line-height: 100%;
+  margin-bottom: 0.2em;
+}
+.blockrain-score-num {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Menu */
+.blockrain-start-holder, .blockrain-game-over-holder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background: url(../images/overlay.png) center no-repeat;
+  text-align: center;
+}
+.blockrain-start, .blockrain-game-over {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+.blockrain-start-msg, .blockrain-game-over-msg {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.block-queue {
+	position: absolute;
+	z-index:20;
+	background: red;
+	left:-20%;
+	right:-20%;
+	top: -40%;
+	bottom: -20%;
+}
+
+
+

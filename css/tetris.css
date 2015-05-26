@@ -1,0 +1,727 @@
+/* Compiled Less CSS File */
+/* Generated from "tetris.css" */
+
+/* Variables */
+/* Construct Styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+canvas,
+#c2canvasdiv {
+  touch-action-delay: none;
+  touch-action: none;
+  -ms-touch-action: none;
+  overflow: hidden;
+}
+/* Basic styles */
+body,
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  background: #194493;
+  color: #fff;
+}
+@media all and (max-width: 640px) {
+  body,
+  html {
+    background: #000000;
+  }
+}
+.clearfix {
+  height: 0px;
+  clear: both;
+}
+.centered {
+  text-align: center;
+}
+@media all and (max-width: 640px) {
+  .mobile-centered {
+    text-align: center !important;
+  }
+}
+.right-align {
+  text-align: right;
+}
+.vertical-padding {
+  padding: 1em 0;
+}
+@media all and (max-width: 640px) {
+  .vertical-padding {
+    padding: 0.5em 0;
+  }
+}
+.vertical-padding-mild {
+  padding: 0.3em 0;
+}
+@media all and (max-width: 640px) {
+  .vertical-padding-mild {
+    padding: 0.2em 0;
+  }
+}
+.horizontal-padding {
+  padding: 0 1em;
+}
+@media all and (max-width: 640px) {
+  .horizontal-padding {
+    padding: 0 0.5em;
+  }
+}
+.horizontal-padding-mild {
+  padding: 0 0.3em;
+}
+@media all and (max-width: 640px) {
+  .horizontal-padding-mild {
+    padding: 0 0.2em;
+  }
+}
+@media all and (max-width: 640px) {
+  .mobi-vertical-padding {
+    padding: 0.5em 0;
+  }
+}
+.all-padding {
+  padding: 1em;
+}
+@media all and (max-width: 640px) {
+  .all-padding {
+    padding: 0.5em;
+  }
+}
+.all-padding-mild {
+  padding: 0.3em 1em;
+}
+@media all and (max-width: 640px) {
+  .all-padding-mild {
+    padding: 0.2em 1em;
+  }
+}
+@media all and (max-width: 640px) {
+  .mobile-terms {
+    padding: 1em 0;
+  }
+}
+.div-centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+#wrapper {
+  width: 700px;
+  max-width: 700px !important;
+  margin: 0 auto;
+}
+@media all and (max-width: 640px) {
+  #wrapper {
+    width: 100% !important;
+  }
+}
+@media all and (max-width: 1000px) {
+  #wrapper {
+    max-width: 700px;
+  }
+}
+@media all and (max-width: 768px) {
+  #wrapper {
+    max-width: 768px;
+  }
+}
+a {
+  color: white;
+}
+.bg-body {
+  background: url("../images/bg.jpg") no-repeat #e1ac13 bottom center;
+  background-size: cover;
+}
+.bg-yellow {
+  background: url("../images/yellow-bg.jpg") no-repeat #e1ac13 bottom center;
+  background-size: cover;
+}
+.bg-red {
+  background: #e3001c;
+  background-repeat: repeat;
+}
+.desktop-visible {
+  display: block;
+}
+@media all and (max-width: 640px) {
+  .desktop-visible {
+    display: none;
+  }
+}
+.mobi-visible {
+  display: none;
+}
+@media all and (max-width: 640px) {
+  .mobi-visible {
+    display: block;
+  }
+}
+.touch .touch-visible {
+  display: block;
+}
+.touch .keyboard-visible {
+  display: none;
+}
+.no-touch .keyboard-visible {
+  display: block;
+}
+.no-touch .touch-visible {
+  display: none;
+}
+.desktop-float-left {
+  float: left;
+}
+@media all and (max-width: 640px) {
+  .desktop-float-left {
+    display: block;
+    float: none;
+  }
+}
+.desktop-float-right {
+  float: right;
+}
+@media all and (max-width: 640px) {
+  .desktop-float-right {
+    display: block;
+    float: none;
+  }
+}
+.mobile-float-right {
+  float: right !important;
+}
+.mobile-float-left {
+  float: left !important;
+}
+.width-50 {
+  width: 50%;
+}
+@media all and (max-width: 640px) {
+  .width-50 {
+    width: 100%;
+  }
+}
+.footer {
+  background-color: #e3001c;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+.footer .contact-us {
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.footer .blackberry-visible {
+  margin-top: 5px;
+}
+.button {
+  cursor: pointer;
+}
+/*
+input[type=checkbox] {
+	width   : 28px;
+  	margin  : 0;
+  	padding : 0;
+  	opacity : 0;
+}
+
+input[type=checkbox] + span {
+	position: absolute;
+	top:0px;
+	background   : url("@{image-folder}checkbox-unselected.png") no-repeat;
+	height: 24px;
+	width: 24px;
+	right: 0px;
+	pointer-events: none;
+}
+
+input[type=checkbox]:checked + span {
+  background   : url("@{image-folder}checkbox-selected.png") no-repeat;	
+}
+*/
+.error {
+  border: 2px solid red !important;
+}
+.blackberry-visible {
+  display: none;
+}
+.blackberry .blackberry-visible {
+  display: block;
+}
+/* Specific Styles */
+#busy {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: url("../images/ajax-loader.gif") no-repeat rgba(0, 0, 0, 0.8) center;
+  display: none;
+  z-index: 9999;
+}
+#busy .message {
+  color: #fff;
+  position: fixed;
+  top: 40%;
+  text-align: center;
+  width: 90%;
+  padding: 0 5%;
+}
+.welcome .header,
+.crios .header,
+.nohtml5 .header,
+.no-canvas .header {
+  background-color: #E3001C;
+  padding: 0.5em 0;
+  text-align: center;
+}
+.no-canvas {
+  width: 700px;
+  max-width: 700px !important;
+  margin: 0 auto;
+}
+@media all and (max-width: 640px) {
+  .no-canvas {
+    width: 100% !important;
+  }
+}
+@media all and (max-width: 1000px) {
+  .no-canvas {
+    max-width: 700px;
+  }
+}
+@media all and (max-width: 768px) {
+  .no-canvas {
+    max-width: 768px;
+  }
+}
+.how-to-play .how-to-packet {
+  margin-top: -197px;
+}
+@media all and (max-width: 640px) {
+  .how-to-play .how-to-packet {
+    margin-top: 0;
+  }
+}
+.win-text {
+  padding-top: 98px;
+}
+@media all and (max-width: 640px) {
+  .win-text {
+    padding-top: 10px;
+  }
+}
+.yellow-packet-small {
+  margin-top: -59px;
+}
+@media all and (max-width: 640px) {
+  .yellow-packet-small {
+    display: none;
+  }
+}
+.entry .form-content,
+.contact .form-content {
+  margin: 0 auto;
+}
+.entry .form-input,
+.contact .form-input {
+  position: relative;
+}
+.entry .form-input input[type=text],
+.contact .form-input input[type=text] {
+  width: 94%;
+  color: black;
+  padding: 0.1em 3%;
+  font-size: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.entry .form-input textarea,
+.contact .form-input textarea {
+  width: 94%;
+  color: black;
+  padding: 0.1em 3%;
+  font-size: 1.2em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.entry .form-wrapper,
+.contact .form-wrapper {
+  clear: both;
+}
+.entry .form-label,
+.contact .form-label {
+  color: #e3001c;
+  font-weight: bold;
+  text-align: right;
+  line-height: 2em;
+}
+@media all and (max-width: 640px) {
+  .entry .form-label,
+  .contact .form-label {
+    text-align: left;
+    font-size: 0.9em;
+  }
+}
+.entry .form-errors,
+.contact .form-errors {
+  text-align: center;
+  border: 1px solid red;
+  background: rgba(255, 0, 0, 0.5);
+  color: white;
+  line-height: 1em;
+  margin: 0 auto;
+  display: none;
+}
+.entry .terms-conditions .form-label,
+.contact .terms-conditions .form-label {
+  text-align: left;
+  color: #00149c;
+}
+.entry .terms-conditions.terms-error .form-label,
+.contact .terms-conditions.terms-error .form-label {
+  color: red;
+}
+.contact .form-errors {
+  margin-top: 1em;
+}
+.leaderboard,
+.thanks {
+  position: relative;
+}
+.leaderboard .large-bird,
+.thanks .large-bird {
+  position: absolute;
+  bottom: 100px;
+}
+.challenge {
+  position: relative;
+}
+@media all and (min-width: 640px) {
+  .challenge .challenge-heading {
+    text-align: right;
+    padding-right: 1em;
+  }
+}
+.challenge input[type=text] {
+  color: #000;
+  font-weight: normal;
+  font-size: 1.2em;
+}
+.challenge .highscores {
+  background-color: rgba(255, 255, 255, 0.3);
+  clear: both;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+}
+.challenge .large-bird {
+  position: absolute;
+  bottom: 60px;
+}
+.challenge-friend {
+  display: none;
+}
+.logged-in .challenge-friend {
+  display: block;
+}
+.autocomplete-suggestions {
+  background: #fff;
+  color: #000;
+}
+.autocomplete-suggestion {
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.autocomplete-selected {
+  background: #FFDD00;
+  color: #CA1525;
+}
+.thanks .reference {
+  color: #ffffff;
+  background: #e3001c;
+  font-weight: bold;
+  margin: 1em auto 0;
+}
+@media all and (max-width: 640px) {
+  .thanks .reference {
+    padding: 0.5em 0;
+  }
+}
+/*.button-thanks {
+	margin-top:20px;
+}*/
+/* Action styles */
+.winner .show-winner {
+  display: block;
+}
+.winner .show-loser {
+  display: none;
+}
+.loser .show-winner {
+  display: none;
+}
+.loser .show-loser {
+  display: block;
+}
+.enter .show-enter {
+  display: block;
+}
+.enter .show-challenge {
+  display: none;
+}
+.enter .show-enquiry {
+  display: none;
+}
+.challenge .show-challenge {
+  display: block;
+}
+.challenge .show-enter {
+  display: none;
+}
+.challenge .show-enquiry {
+  display: none;
+}
+.enquiry .show-enquiry {
+  display: block;
+}
+.enquiry .show-challenge {
+  display: none;
+}
+.enquiry .show-enter {
+  display: none;
+}
+/* Make image widths */
+.image-stretch-10 img {
+  width: 10%;
+}
+.image-stretch-15 img {
+  width: 15%;
+}
+.image-stretch-20 img {
+  width: 20%;
+}
+.image-stretch-25 img {
+  width: 25%;
+}
+.image-stretch-30 img {
+  width: 30%;
+}
+.image-stretch-35 img {
+  width: 35%;
+}
+.image-stretch-40 img {
+  width: 40%;
+}
+.image-stretch-45 img {
+  width: 45%;
+}
+.image-stretch-50 img {
+  width: 50%;
+}
+.image-stretch-55 img {
+  width: 55%;
+}
+.image-stretch-60 img {
+  width: 60%;
+}
+.image-stretch-65 img {
+  width: 65%;
+}
+.image-stretch-70 img {
+  width: 70%;
+}
+.image-stretch-75 img {
+  width: 75%;
+}
+.image-stretch-80 img {
+  width: 80%;
+}
+.image-stretch-85 img {
+  width: 85%;
+}
+.image-stretch-90 img {
+  width: 90%;
+}
+.image-stretch-95 img {
+  width: 95%;
+}
+.image-stretch-100 img {
+  width: 100%;
+}
+/* Mobile image widths */
+@media all and (max-width: 640px) {
+  .mobile-stretch-10 img {
+    width: 10% !important;
+  }
+  .mobile-stretch-15 img {
+    width: 15% !important;
+  }
+  .mobile-stretch-20 img {
+    width: 20% !important;
+  }
+  .mobile-stretch-25 img {
+    width: 25% !important;
+  }
+  .mobile-stretch-30 img {
+    width: 30% !important;
+  }
+  .mobile-stretch-35 img {
+    width: 35% !important;
+  }
+  .mobile-stretch-40 img {
+    width: 40% !important;
+  }
+  .mobile-stretch-45 img {
+    width: 45% !important;
+  }
+  .mobile-stretch-50 img {
+    width: 50% !important;
+  }
+  .mobile-stretch-55 img {
+    width: 55% !important;
+  }
+  .mobile-stretch-60 img {
+    width: 60% !important;
+  }
+  .mobile-stretch-65 img {
+    width: 65% !important;
+  }
+  .mobile-stretch-70 img {
+    width: 70% !important;
+  }
+  .mobile-stretch-75 img {
+    width: 75% !important;
+  }
+  .mobile-stretch-80 img {
+    width: 80% !important;
+  }
+  .mobile-stretch-85 img {
+    width: 85% !important;
+  }
+  .mobile-stretch-90 img {
+    width: 90% !important;
+  }
+  .mobile-stretch-95 img {
+    width: 95% !important;
+  }
+  .mobile-stretch-100 img {
+    width: 100% !important;
+  }
+}
+/* WIdths */
+.desktop-width-10 {
+  width: 10%;
+}
+.desktop-width-15 {
+  width: 15%;
+}
+.desktop-width-20 {
+  width: 20%;
+}
+.desktop-width-25 {
+  width: 25%;
+}
+.desktop-width-30 {
+  width: 30%;
+}
+.desktop-width-35 {
+  width: 35%;
+}
+.desktop-width-40 {
+  width: 40%;
+}
+.desktop-width-45 {
+  width: 45%;
+}
+.desktop-width-50 {
+  width: 50%;
+}
+.desktop-width-55 {
+  width: 55%;
+}
+.desktop-width-60 {
+  width: 60%;
+}
+.desktop-width-65 {
+  width: 65%;
+}
+.desktop-width-70 {
+  width: 70%;
+}
+.desktop-width-75 {
+  width: 75%;
+}
+.desktop-width-80 {
+  width: 80%;
+}
+.desktop-width-85 {
+  width: 85%;
+}
+.desktop-width-90 {
+  width: 90%;
+}
+.desktop-width-95 {
+  width: 95%;
+}
+.desktop-width-100 {
+  width: 100%;
+}
+/* Mobile Widths */
+@media all and (max-width: 640px) {
+  .mobile-width-10 {
+    width: 10% !important;
+  }
+  .mobile-width-15 {
+    width: 15% !important;
+  }
+  .mobile-width-20 {
+    width: 20% !important;
+  }
+  .mobile-width-25 {
+    width: 25% !important;
+  }
+  .mobile-width-30 {
+    width: 30% !important;
+  }
+  .mobile-width-35 {
+    width: 35% !important;
+  }
+  .mobile-width-40 {
+    width: 40% !important;
+  }
+  .mobile-width-45 {
+    width: 45% !important;
+  }
+  .mobile-width-50 {
+    width: 50% !important;
+  }
+  .mobile-width-55 {
+    width: 55% !important;
+  }
+  .mobile-width-60 {
+    width: 60% !important;
+  }
+  .mobile-width-65 {
+    width: 65% !important;
+  }
+  .mobile-width-70 {
+    width: 70% !important;
+  }
+  .mobile-width-75 {
+    width: 75% !important;
+  }
+  .mobile-width-80 {
+    width: 80% !important;
+  }
+  .mobile-width-85 {
+    width: 85% !important;
+  }
+  .mobile-width-90 {
+    width: 90% !important;
+  }
+  .mobile-width-95 {
+    width: 95% !important;
+  }
+  .mobile-width-100 {
+    width: 100% !important;
+  }
+}

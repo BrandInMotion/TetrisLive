@@ -1,0 +1,607 @@
+﻿/* Variables */
+
+@background-image: "bg.jpg";
+@background-yellow-image: "yellow-bg.jpg";
+@image-folder: "../images/";
+
+/* Construct Styles */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+canvas, #c2canvasdiv {
+	touch-action-delay: none;
+	touch-action: none;
+	-ms-touch-action: none;
+	overflow: hidden;
+}
+
+/* Basic styles */
+
+body, html {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1em;
+	background: #194493;
+	color: #fff;
+	
+	@media all and (max-width: 640px) {
+		background: #000000;
+	}
+}
+
+.clearfix {
+	height:0px;
+	clear:both;
+}
+
+.centered {
+	text-align: center;	
+	
+}
+
+.mobile-centered {
+	@media all and (max-width: 640px) {
+		text-align: center !important;	
+	}
+}
+
+.right-align {
+	text-align:right;	
+}
+
+.vertical-padding {
+	padding: 1em 0;
+	
+	@media all and (max-width: 640px) {
+		padding: 0.5em 0;	
+	}
+}
+
+.vertical-padding-mild {
+	padding: 0.3em 0;
+	
+	@media all and (max-width: 640px) {
+		padding: 0.2em 0;	
+	}
+	
+}
+
+.horizontal-padding {
+	padding: 0 1em;
+	
+	@media all and (max-width: 640px) {
+		padding: 0 0.5em;	
+	}
+}
+
+.horizontal-padding-mild {
+	padding: 0 0.3em;
+	
+	@media all and (max-width: 640px) {
+		padding: 0 0.2em;	
+	}
+	
+}
+
+.mobi-vertical-padding {
+	@media all and (max-width: 640px) {
+		padding: 0.5em 0;	
+	}
+}
+
+.all-padding {
+	padding: 1em;	
+	
+	@media all and (max-width: 640px) {
+		padding: 0.5em;	
+	}
+}
+
+.all-padding-mild {
+	padding: 0.3em 1em;	
+	
+	@media all and (max-width: 640px) {
+		padding: 0.2em 1em;	
+	}
+}
+
+.mobile-terms {
+	@media all and (max-width: 640px) {
+		padding: 1em 0;
+	}
+}
+
+.div-centered {
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#wrapper {
+	width: 700px;
+	max-width: 700px !important;	
+	margin:0 auto;
+	
+	@media all and (max-width: 640px) {
+			width: 100% !important;	
+	}
+	
+	@media all and (max-width: 1000px) {
+			max-width: 700px;	
+	}
+	
+	@media all and (max-width: 768px) {
+			max-width: 768px;	
+	}
+}
+
+a {
+	color: white;	
+}
+
+.page {
+	
+}
+
+.bg-body {
+	background: url("@{image-folder}@{background-image}") no-repeat #e1ac13 bottom center;
+	background-size: cover;
+}
+
+.bg-yellow {
+	background: url("@{image-folder}@{background-yellow-image}") no-repeat #e1ac13 bottom center;
+	background-size: cover;
+}
+
+.bg-red {
+	background: #e3001c;
+	background-repeat:repeat;
+}
+
+.desktop-visible {
+	display:block;
+	
+	@media all and (max-width: 640px) {
+		display:none;	
+	}	
+}
+
+.mobi-visible {
+	display:none;
+	
+	@media all and (max-width: 640px) {
+		display:block;	
+		
+	}
+}
+
+.touch .touch-visible {
+	display:block;
+}
+
+.touch .keyboard-visible {
+	display:none;
+}
+
+.no-touch .keyboard-visible {
+	display:block;
+}
+
+.no-touch .touch-visible {
+	display:none;
+}
+
+.desktop-float-left {
+	
+	float: left;
+
+	@media all and (max-width: 640px) {
+		display:block;	
+		float: none;
+	}
+	
+}
+
+.desktop-float-right {
+	
+	float: right;
+
+	@media all and (max-width: 640px) {
+		display:block;
+		float: none;	
+	}
+	
+}
+
+.mobile-float-right {
+	float: right !important;	
+}
+
+.mobile-float-left {
+	float: left !important;	
+}
+
+.width-50 {
+	width: 50%;	
+	
+	@media all and (max-width: 640px) {
+		width: 100%;	
+	}
+}
+
+.footer {
+		background-color: #e3001c;
+		color: white;
+		text-transform:uppercase;
+		font-size: 0.8em;
+		line-height: 1.5em;
+		
+		.contact-us {
+			font-weight: bold;
+			font-size: 1.1em;	
+		}
+				
+		.blackberry-visible {
+			margin-top: 5px;	
+		}
+	}
+
+.button {
+	cursor: pointer;	
+}
+
+/*
+input[type=checkbox] {
+	width   : 28px;
+  	margin  : 0;
+  	padding : 0;
+  	opacity : 0;
+}
+
+input[type=checkbox] + span {
+	position: absolute;
+	top:0px;
+	background   : url("@{image-folder}checkbox-unselected.png") no-repeat;
+	height: 24px;
+	width: 24px;
+	right: 0px;
+	pointer-events: none;
+}
+
+input[type=checkbox]:checked + span {
+  background   : url("@{image-folder}checkbox-selected.png") no-repeat;	
+}
+*/
+.error {
+	border: 2px solid red !important;	
+}
+
+.blackberry-visible {
+	display:none;	
+}
+
+.blackberry .blackberry-visible {
+	display:block;	
+}
+
+/* Specific Styles */
+
+#busy {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0px;
+	left:0px;
+	background: url("@{image-folder}ajax-loader.gif") no-repeat rgba(0,0,0,0.8) center;
+	display:none;
+	z-index:9999;
+	
+	.message {
+		color: #fff;
+		position:fixed;
+		top: 40%;
+		text-align: center;
+		width: 90%;
+		padding: 0 5%;	
+	}
+}
+
+.welcome, .crios, .nohtml5, .no-canvas {
+	.header {
+		background-color: #E3001C;
+		padding: 0.5em 0;
+		text-align: center;
+	}
+}
+
+.no-canvas {
+	width: 700px;
+	max-width: 700px !important;	
+	margin:0 auto;
+	
+	@media all and (max-width: 640px) {
+			width: 100% !important;	
+	}
+	
+	@media all and (max-width: 1000px) {
+			max-width: 700px;	
+	}
+	
+	@media all and (max-width: 768px) {
+			max-width: 768px;	
+	}
+}
+
+.how-to-play {
+	.how-to-packet {
+		  margin-top: -197px;
+		  
+		  @media all and (max-width: 640px) {
+			  margin-top: 0;
+		  }
+	}
+}
+
+.win-text {
+	padding-top: 98px;
+	
+	@media all and (max-width: 640px) {
+		padding-top: 10px;	
+	}
+}
+
+.yellow-packet-small {
+	  margin-top: -59px;
+	
+	@media all and (max-width: 640px) {
+		display:none;
+	}	
+}
+
+
+
+.entry, .contact {
+	.form-content {
+		margin: 0 auto;	
+	}
+	.form-input {
+		position:relative;	
+	}
+	.form-input input[type=text] {
+		width: 94%;	
+		color: black;
+		padding: 0.1em 3%;
+		font-size: 1.2em;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	.form-input textarea {
+		width: 94%;	
+		color: black;
+		padding: 0.1em 3%;
+		font-size: 1.2em;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	.form-wrapper {
+		clear:both;	
+	}
+	.form-label {
+		color: #e3001c;
+		font-weight: bold;
+		text-align: right;
+		line-height: 2em;
+		
+		@media all and (max-width: 640px) {
+			text-align: left;	
+			font-size: 0.9em;
+		}
+	}
+	.form-errors {
+		text-align: center;
+		border: 1px solid red;
+		background: rgba(255,0,0,0.5);
+		color: white;
+		line-height: 1em;
+		margin: 0 auto;	
+		display:none;
+	}
+	.terms-conditions .form-label {
+		text-align:left; 
+		color: #00149c;
+	}
+	.terms-conditions.terms-error .form-label {
+		color: red;	
+	}
+}
+
+.contact .form-errors {
+		margin-top: 1em;
+	}
+
+.leaderboard, .thanks {
+	
+	position:relative;
+	
+	.large-bird {
+		position: absolute;
+		bottom: 100px;	
+	}
+}
+
+.challenge {
+	
+	position:relative;
+	
+	.challenge-heading {
+		@media all and (min-width: 640px) {
+			text-align: right;
+			padding-right: 1em;
+		}
+	}
+	
+	input[type=text] {
+		color: #000;	
+		font-weight: normal;
+		font-size: 1.2em;
+	}
+	
+	.highscores {
+		background-color: rgba(255,255,255,0.3);	
+		clear:both;
+		color: white;
+		font-weight:bold;
+		font-size: 1em;
+	}
+		
+	.large-bird {
+		position: absolute;
+		bottom: 60px;	
+	}
+	
+
+
+}
+
+.challenge-friend {
+	display:none;	
+}
+	
+.logged-in .challenge-friend {
+	display:block;	
+}
+
+	.autocomplete-suggestions {
+		background: #fff;
+		color: #000;	
+	}
+	
+	.autocomplete-suggestion {
+		border-bottom: 1px solid black;	
+		cursor:pointer;
+	}
+	
+	.autocomplete-selected {
+		background: #FFDD00;
+		color: #CA1525;
+	}
+
+.thanks .reference {
+	color: #ffffff;
+	background: #e3001c;
+	font-weight:bold;
+	margin: 1em auto 0;
+	
+	@media all and (max-width: 640px) {
+		padding: 0.5em 0;	
+	}
+}
+
+/*.button-thanks {
+	margin-top:20px;
+}*/
+
+/* Action styles */
+
+.winner {
+	.show-winner {
+		display:block;	
+	}
+	.show-loser {
+		display:none;
+	}
+}
+
+.loser {
+	.show-winner {
+		display:none;	
+	}
+	.show-loser {
+		display:block;	
+	}
+}
+
+.enter {
+	.show-enter {
+		display:block;
+	}
+	.show-challenge {
+		display:none;
+	}
+	.show-enquiry {
+		display:none;	
+	}
+}
+
+.challenge {
+	.show-challenge {
+		display:block;
+	}
+	.show-enter {
+		display:none;
+	}
+	.show-enquiry {
+		display:none;	
+	}
+}
+
+.enquiry {
+	.show-enquiry {
+		display:block;	
+	}
+	.show-challenge {
+		display:none;
+	}
+	.show-enter {
+		display:none;
+	}
+}
+
+/* Make image widths */
+
+.makeDesktopImageWidth(@max, @class-prefix, @i:10) when (@i =< @max) {
+	.@{class-prefix}@{i} img {
+		width: unit(@i,~"%");
+	}
+  .makeDesktopImageWidth(@max, @class-prefix, @i:(@i+5));
+}
+
+.makeDesktopImageWidth(100, image-stretch-);
+
+/* Mobile image widths */
+
+@media all and (max-width: 640px) {
+	.makeMobileImageWidth(@max, @class-prefix, @i:10) when (@i =< @max) {
+		.@{class-prefix}@{i} img {
+			width: unit(@i,~"%") !important;
+		}
+  	.makeMobileImageWidth(@max, @class-prefix, @i:(@i+5));
+	}
+
+	.makeMobileImageWidth(100, mobile-stretch-);
+	
+}
+
+/* WIdths */
+
+.makeDesktopWidth(@max, @class-prefix, @i:10) when (@i =< @max) {
+	.@{class-prefix}@{i} {
+		width: unit(@i,~"%");
+	}
+  .makeDesktopWidth(@max, @class-prefix, @i:(@i+5));
+}
+
+.makeDesktopWidth(100,desktop-width-);
+
+/* Mobile Widths */
+
+@media all and (max-width: 640px) {
+	.makeMobileWidth(@max, @class-prefix, @i:10) when (@i =< @max) {
+		.@{class-prefix}@{i} {
+			width: unit(@i,~"%") !important;
+		}
+  	.makeMobileWidth(@max, @class-prefix, @i:(@i+5));
+	}
+
+	.makeMobileWidth(100, mobile-width-);
+	
+}

@@ -1,0 +1,263 @@
+/* Compiled Less CSS File */
+/* Generated from "yelllowpacket.css" */
+
+html,
+body {
+  background: #3b3d3b;
+  padding: 0;
+  margin: 0;
+  font-family: "Play", "Helvetica Neue", "Arial", sans-serif;
+  font-weight: normal;
+  line-height: 160%;
+  font-size: 16px;
+  color: #fff;
+}
+div {
+  box-sizing: border-box;
+}
+#cover-tetris {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  position: absolute;
+}
+.page {
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+}
+.page.game {
+  background: url(../images/background.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 75px;
+  overflow: hidden;
+}
+.header {
+  height: 88px;
+}
+@media all and (max-width: 640px) {
+  .header {
+    height: 20px;
+  }
+}
+.conveyer {
+  height: 150px;
+  background: url(../images/conveyerbg.png) repeat-x;
+  background-position: bottom;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+@media all and (max-width: 640px) {
+  .conveyer {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+}
+.conveyer .con-inner {
+  position: absolute;
+  height: 132px;
+  width: 700px;
+  overflow: hidden;
+  top: 9px;
+  left: 30%;
+}
+@media all and (max-width: 640px) {
+  .conveyer .con-inner {
+    height: 71px;
+    left: 42%;
+    top: 0px;
+  }
+}
+.conveyer .con-inner img {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  height: 100%;
+}
+@media all and (max-width: 640px) {
+  .conveyer .con-inner img {
+    margin-right: 5px;
+  }
+}
+.game-wrapper {
+  background: url(../images/packet.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  width: 100%;
+  max-width: 509px;
+  height: 486px;
+  float: left;
+}
+@media all and (max-width: 640px) {
+  .game-wrapper {
+    float: none;
+    max-width: none;
+    margin: 0 auto;
+  }
+}
+.game-wrapper .arrow {
+  position: absolute;
+  top: -30px;
+  left: 32%;
+  width: 33%;
+  z-index: 11;
+}
+@media all and (max-width: 640px) {
+  .game-wrapper .arrow {
+    top: -10px;
+  }
+}
+.game-wrapper .arrow img {
+  width: 100%;
+}
+.game-wrapper .game-inner {
+  position: absolute;
+  left: 11.5%;
+  right: 15.5%;
+  bottom: 12%;
+  top: 10%;
+}
+.hud-wrapper {
+  width: 187px;
+  position: absolute;
+  right: 20px;
+  font-family: "Arial Black", "Franklin Gothic Bold", sans-serif;
+  color: #fff;
+}
+@media all and (max-width: 640px) {
+  .hud-wrapper {
+    position: static;
+    width: 100%;
+  }
+}
+.hud-wrapper .score-wrapper {
+  padding-top: 30px;
+}
+@media all and (max-width: 640px) {
+  .hud-wrapper .score-wrapper {
+    width: 100%;
+    padding: 20px 20px 0 20px;
+    clear: both;
+  }
+}
+.hud-wrapper .score-wrapper .button-header {
+  font-size: 16px;
+}
+@media all and (max-width: 479px) {
+  .hud-wrapper .score-wrapper .button-header {
+    font-size: 12px;
+  }
+}
+.hud-wrapper .score-wrapper .button-content {
+  font-size: 48px;
+  line-height: 36px;
+}
+@media all and (max-width: 479px) {
+  .hud-wrapper .score-wrapper .button-content {
+    font-size: 28px;
+    line-height: 18px;
+  }
+}
+.hud-wrapper .score-wrapper .score {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 5px 0 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.hud-wrapper .score-wrapper .level {
+  background-color: black;
+  width: 44%;
+  text-align: center;
+  padding: 5px 0 15px;
+  float: left;
+  margin-right: 5%;
+  border-radius: 10px;
+}
+.hud-wrapper .score-wrapper .mute {
+  width: 50%;
+  float: right;
+  background-color: black;
+  border-radius: 10px;
+  height: 80px;
+  padding-top: 12px;
+}
+.hud-wrapper .score-wrapper .mute .mute-wrapper {
+  width: 50px;
+  margin: 0 auto;
+}
+.hud-wrapper .score-wrapper .mute .mute-wrapper img {
+  width: 50px;
+}
+@media all and (max-width: 640px) {
+  .hud-wrapper .score-wrapper .mute {
+    float: right;
+  }
+}
+@media all and (max-width: 479px) {
+  .hud-wrapper .score-wrapper .mute {
+    height: 64px;
+    padding-top: 5px;
+  }
+}
+.hud-wrapper .controls-wrapper {
+  clear: both;
+}
+.hud-wrapper .controls-wrapper img {
+  width: 100%;
+}
+@media all and (max-width: 640px) {
+  .hud-wrapper .controls-wrapper {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 0px;
+    clear: none;
+  }
+}
+.hud-wrapper .controls-wrapper .go-left {
+  float: left;
+  width: 100%;
+  max-width: 78px;
+  max-height: 100px;
+}
+@media all and (max-width: 640px) {
+  .hud-wrapper .controls-wrapper .go-left {
+    width: 18%;
+    max-width: none;
+    margin-right: 5%;
+  }
+}
+.hud-wrapper .controls-wrapper .go-right {
+  float: right;
+  width: 100%;
+  max-width: 78px;
+  max-height: 100px;
+}
+@media all and (max-width: 640px) {
+  .hud-wrapper .controls-wrapper .go-right {
+    float: left;
+    width: 18%;
+    max-width: none;
+  }
+}
+.hud-wrapper .controls-wrapper .spacebar {
+  clear: both;
+  width: 100%;
+  max-width: 210px;
+  padding-top: 20px;
+}
+@media all and (max-width: 640px) {
+  .hud-wrapper .controls-wrapper .spacebar {
+    clear: none;
+    float: right;
+    padding-top: 0px;
+    max-width: none;
+    width: 48%;
+  }
+}

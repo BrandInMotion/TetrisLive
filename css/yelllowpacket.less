@@ -1,0 +1,279 @@
+html,
+body {
+    background: #3b3d3b;
+    padding: 0;
+    margin: 0;
+    font-family: "Play", "Helvetica Neue", "Arial", sans-serif;
+    font-weight: normal;
+    line-height: 160%;
+    font-size: 16px;
+    color: #fff;
+}
+
+div {
+	 box-sizing: border-box;	
+}
+
+#cover-tetris {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+	position: absolute;
+}
+
+.page {
+	width: 100%;
+	max-width: 700px;
+	position: relative;
+	
+}
+
+.page.game {
+	background: url(../images/background.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-bottom: 75px;
+	overflow:hidden;
+}
+
+.header {
+	height: 88px;
+	
+	@media all and (max-width: 640px) {
+		height: 20px;	
+	}
+}
+
+.conveyer {
+	height:150px;
+	background:url(../images/conveyerbg.png) repeat-x;
+	background-position:bottom;
+	margin-bottom: 30px;
+	overflow:hidden;
+	
+	@media all and (max-width: 640px) {
+		height: 80px;	
+		margin-bottom: 10px;
+	}
+	
+	.con-inner {
+		
+	  position: absolute;
+	  height: 132px;
+	  width: 700px;
+	  overflow:hidden;
+	  top: 9px;
+	  left: 30%;
+		
+		@media all and (max-width: 640px) {
+			height: 71px;
+			left: 42%;
+			top: 0px;
+		}
+		
+		img {
+			display: inline-block;
+			vertical-align: bottom;
+			margin-right: 10px;
+			height: 100%;
+			
+			@media all and (max-width: 640px) {
+				margin-right:5px;	
+			}
+		}
+	}
+}
+
+.game-wrapper {
+	background: url(../images/packet.png) no-repeat;
+	background-size: cover;	
+	background-position: bottom;
+	position: relative;
+	width: 100%;
+	max-width: 509px;
+
+	height: 486px;
+	float:left;
+	
+	@media all and (max-width: 640px) {
+		float: none;	
+		max-width: none;
+		margin: 0 auto;
+	}
+	
+	.arrow {
+		position: absolute;
+		top: -30px;
+  		left: 32%;
+		width: 33%;
+		z-index: 11;
+		
+		@media all and (max-width: 640px) {
+			top: -10px;	
+		}
+		
+		img {
+			width: 100%;	
+		}
+	}
+	
+	.game-inner {
+		position: absolute;
+  left: 11.5%;
+  right: 15.5%;
+  bottom: 12%;
+  top: 10%;
+	}
+}
+
+.hud-wrapper {
+	
+	width: 187px;
+	position: absolute;
+	right: 20px;
+	font-family:"Arial Black", "Franklin Gothic Bold", sans-serif;
+	color: #fff;
+	
+	@media all and (max-width: 640px) {
+		position: static;
+		width: 100%;	
+	}
+	
+	.score-wrapper {
+		
+		padding-top: 30px;
+		
+		@media all and (max-width: 640px) {
+			width: 100%;
+			padding: 20px 20px 0 20px;
+			clear:both;
+		}
+		
+		.button-header {
+			font-size: 16px;
+			
+			@media all and (max-width: 479px) {
+				font-size: 12px;
+			}
+		}
+		
+		.button-content {
+			font-size: 48px; 
+			line-height: 36px;
+			
+			@media all and (max-width: 479px) {
+				font-size: 28px;
+				line-height: 18px;
+			}
+		}
+		
+		.score {
+			background-color: black;
+			width: 100%;
+			text-align:center;
+			padding: 5px 0 15px;
+			margin-bottom: 10px;
+			border-radius:10px;
+
+		}
+		.level {
+			background-color: black;
+			width: 44%;
+			text-align:center;
+			padding: 5px 0 15px;
+			float: left;
+			margin-right: 5%;
+			border-radius:10px;
+
+		}
+		.mute {
+			width: 50%;
+			float: right;
+			background-color: black;
+			border-radius:10px;
+			height: 80px;
+			padding-top: 12px;
+			
+			.mute-wrapper {
+				width: 50px;
+				margin: 0 auto;
+				
+				img {
+					width: 50px;	
+				}
+			}
+			
+			@media all and (max-width: 640px) {
+				float: right;
+			}
+			
+			@media all and (max-width: 479px) {
+				height: 64px;
+				padding-top: 5px;
+			}
+		}
+	}
+	
+	.controls-wrapper {
+		
+		clear:both;
+		
+		img {
+			width: 100%;	
+		}
+		
+		@media all and (max-width: 640px) {
+			width: 100%;
+			padding-right: 20px;
+			padding-left: 20px;
+			padding-top: 0px;
+			clear:none;
+		}
+		
+		.go-left {
+			float:left;
+			width:100%;
+			max-width: 78px;
+			max-height: 100px;
+			
+			@media all and (max-width: 640px) {
+				width: 18%;
+				max-width: none;
+				margin-right: 5%;
+			}
+		}
+		
+		.go-right {
+			float:right;
+			width:100%;
+			max-width: 78px;
+			max-height: 100px;
+			
+			@media all and (max-width: 640px) {
+				float: left;
+				width: 18%;
+				max-width: none;
+
+			}
+		}
+		
+		.spacebar {
+			clear:both;
+			width: 100%;
+			max-width: 210px;
+			padding-top: 20px;
+			
+			@media all and (max-width: 640px) {
+				clear:none;
+				float:right;
+				padding-top: 0px;
+				max-width: none;
+				width: 48%;
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,384 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+
+<title>Shoprite Yellow Packet</title>
+
+<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+<meta name="HandheldFriendly" content="true" />
+
+<!-- Chrome for Android web app tags -->
+<meta name="mobile-web-app-capable" content="yes" />
+<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/tetris.css">
+<link rel="stylesheet" href="css/yelllowpacket.css">
+<link rel="stylesheet" href="css/blockrain.css">
+</head>
+<body class="loser">
+<!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]--> 
+
+<!-- Start chirpy code -->
+<div id="busy">
+  <div class="message">&nbsp;</div>
+</div>
+
+<div id="wrapper">
+  <!-- Welcome -->
+  <div class="page welcome">
+    <div class="bg-body vertical-padding">
+      <div class="desktop-float-right mobile-stretch-70 mobile-centered width-50 "><img alt="" src="images/welcome-text.png" /></div>
+      <div class="desktop-float-left mobile-stretch-70 mobile-centered width-50 "><img alt="" src="images/yellow-packet.png" /></div>
+      <div class="desktop-float-right mobile-stretch-70 mobile-centered width-50 win-text"><img alt="" src="images/win-text.png" /></div>
+      <div class="button play desktop-float-right mobile-stretch-70 mobile-centered width-50"><img alt="" src="images/play-button.png" /></div>
+      <div class="clearfix">&nbsp;</div>
+    </div>
+    <div class="footer all-padding">
+      <div class="desktop-float-left mobile-centered desktop-width-50 mobile-width-100 mobi-vertical-padding"> <a href="http://www.termsconditions.co.za" target="_blank">Terms &amp; conditions</a><br />
+        <a href="#" target="_blank" class="contact-us">Having trouble? Contact Us</a><br/>
+        <span class="blackberry-visible">If you&rsquo;re having trouble playing this game, try playing our <a href="#">feature phone game</a>!</span></div>
+      <div class="mobile-stretch-90 desktop-float-right mobile-centered mobi-vertical-padding "><img alt="" src="images/shoprite-logo.png" /></div>
+      <div class="clearfix">&nbsp;</div>
+    </div>
+  </div>
+  <!-- End Welcome --> 
+<!-- Crios -->
+<div class="page crios">
+  <div class="bg-body vertical-padding">
+    <div class="desktop-float-right mobile-stretch-70 mobile-centered width-50 "><img alt="" src="images/crios.png" /></div>
+    <div class="desktop-float-left mobile-stretch-70 mobile-centered width-50 "><img alt="" src="images/yellow-packet.png" /></div>
+    <div class="clearfix">&nbsp;</div>
+  </div>
+  <div class="footer all-padding">
+    <div class="desktop-float-left mobile-centered"> <a href="http://www.termsconditions.co.za" target="_blank">Terms &amp; conditions</a><br />
+      <span class="blackberry-visible">If you&rsquo;re having trouble playing this game, try playing our <a href="#">feature phone game</a>!</span></div>
+    <div class="header mobile-stretch-90 desktop-float-right mobile-centered"><img alt="" src="images/shoprite-logo.png" /></div>
+    <div class="clearfix">&nbsp;</div>
+  </div>
+</div>
+<!-- End Crios --> 
+<!-- How To Play -->
+
+<div class="page how-to-play">
+  <div class="bg-body">
+    <div class="desktop-float-right mobile-stretch-70 mobile-centered width-50 "><img alt="" src="images/winning-is-easy.png" /></div>
+    <div class="desktop-float-left mobile-stretch-70 mobile-centered width-50 "><img alt="" src="images/yellow-packet-small.png" /></div>
+    <div class="desktop-float-right mobile-stretch-70 mobile-centered width-50"><img alt="" src="images/controls.png" /></div>
+    <div class="clearfix">&nbsp;</div>
+    <div class="button start mobile-stretch-70 centered"><img alt="" src="images/start-winning.png" /></div>
+  </div>
+  <div class="footer all-padding">
+    <div class="desktop-float-left mobile-centered"> <a href="http://www.termsconditions.co.za" target="_blank">Terms &amp; conditions</a><br />
+      <span class="blackberry-visible">If you&rsquo;re having trouble playing this game, try playing our <a href="#">feature phone game</a>!</span></div>
+    <div class="header mobile-stretch-90 desktop-float-right mobile-centered"><img alt="" src="images/shoprite-logo.png" /></div>
+    <div class="clearfix">&nbsp;</div>
+  </div>
+</div>
+<!-- End How To Play -->
+ 
+<!-- HTML5 Game -->
+
+<div class="page html5 game">
+    <div class="conveyer">
+    	<div class="con-inner">
+
+        </div>
+    </div>
+	<div class="game-wrapper">
+    	<div class="arrow"><img src="images/arrow.png" alt=""/></div>
+    	<div class="game-inner">
+    		<div id="cover-tetris">
+            	
+            </div>
+        </div>
+    </div>
+    <div class="hud-wrapper">
+    	
+        <div class="controls-wrapper">
+            <div class="go-left"><img src="images/left.png" alt=""/></div>
+            <div class="go-right"><img src="images/right.png" alt=""/></div>
+            <div class="spacebar"><img src="images/spacebar.png" alt=""/></div>
+        </div>
+        <div class="score-wrapper">
+            <div class="score">
+            	<div class="button-header">SCORE</div>
+                <div class="button-content blockrain-score-num">0000</div>
+            </div>
+            <div class="level">
+            	<div class="button-header">LIVES</div>
+                <div class="button-content">3</div>
+            </div>
+            <div class="mute">
+            	<div class="mute-wrapper">
+            		<img src="images/mute.png" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="clear:both"></div>
+
+
+</div>
+<!-- End HTML5 Game -->
+
+ <!-- Play Again -->
+  
+  <div class="page play-again">
+    <div class="bg-red">
+      <div class="image-stretch-90 centered mobile-stretch-90 show-loser"><img alt="" src="images/sorry.png" /></div>
+    </div>
+    <div class="bg-yellow">
+      <div class="image-stretch-70 mobile-stretch-90 centered vertical-padding show-loser"><img src="images/missed-out-again.png" /></div>
+      <div class="centered desktop-width-40 mobile-width-100 div-centered">
+        <div class="image-stretch-100 mobile-stretch-60"><img class="button play-again" src="images/button-play-again.png" /></div>
+        <div class="image-stretch-100 mobile-stretch-60 all-padding-mild"><a target="_blank" href="http://www.shoprite.co.za/Pages/specials.aspx?utm_source=YellowPacketChallenge&utm_medium=WebGameButton&utm_campaign=YellowPacket"><img class="button top-scores" src="images/button-view-top-scores.png" /></a></div>
+      </div>
+      <div class="vertical-padding">&nbsp;</div>
+    </div>
+    <div class="footer all-padding">
+      <div class="desktop-float-left mobile-centered desktop-width-50 mobile-width-100 mobi-vertical-padding"> <a href="http://www.termsconditions.co.za" target="_blank">Terms &amp; conditions</a><br />
+        <a href="#" target="_blank" class="contact-us">Having trouble? Contact Us</a><br/>
+        <span class="blackberry-visible">If you&rsquo;re having trouble playing this game, try playing our <a href="#">feature phone game</a>!</span></div>
+      <div class="mobile-stretch-90 desktop-float-right mobile-centered mobi-vertical-padding"><img alt="" src="images/shoprite-logo.png" /></div>
+      <div class="clearfix">&nbsp;</div>
+    </div>
+  </div>
+  <!-- End Play Again --> 
+  
+  <!-- Entry Form -->
+  
+  <div class="page entry">
+    <div class="bg-red vertical-padding">
+      <div class="image-stretch-90 centered mobile-stretch-90 show-winner"><img alt="" src="images/congrats.png" /></div>
+      <div class="centered mobile-stretch-90 show-loser"><img alt="" src="images/sorry.png" /></div>
+      <div class="image-stretch-90 mobile-stretch-90 centered show-winner"><img src="images/won-voucher.png" /></div>
+      <div class="image-stretch-90 mobile-stretch-90 centered show-loser"><img src="images/missed-out.png" /></div>
+    </div>
+    <!-- Start Form -->
+    <div class="bg-yellow">
+      <div class="entry-form all-padding">
+        <div class="form-content desktop-width-80 mobile-width-90">
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">FIRST NAMES&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input id="firstname" type="text" />
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">SURNAME&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input id="surname" type="text" />
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">EMAIL ADDRESS&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input id="email" type="text"  />
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">CELL NUMBER&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input id="cell" type="text" maxlength="10"/>
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-input desktop-width-30 mobile-width-10 desktop-float-left mobile-float-left" style="text-align:right">
+              <input id="newsletter" type="checkbox" />
+              <span>&nbsp;</span></div>
+            <div class="form-label desktop-width-65 mobile-width-85 desktop-float-right mobile-float-right" style="text-align:left; color: #00149c; line-height: 1em">Stay up to date on the latest deals and competitions. Sign up to our newsletter now!</div>
+          </div>
+          <div class="form-wrapper vertical-padding terms-conditions">
+            <div class="form-input desktop-width-30 mobile-width-10 desktop-float-left mobile-float-left" style="text-align:right">
+              <input id="terms" type="checkbox" />
+              <span>&nbsp;</span></div>
+            <div class="form-label desktop-width-65 mobile-width-85 desktop-float-right mobile-float-right">Accept Terms &amp; Conditions</div>
+          </div>
+          <div class="clearfix">&nbsp;</div>
+        </div>
+      </div>
+      <!-- End form -->
+      
+      <div class="image-stretch-30 mobile-stretch-50 centered"><img class="button submit" src="images/submit.png" /></div>
+      <div class="mobile-width-80 desktop-width-80 form-errors centered all-padding">There was a problem with your details. Please check and resubmit.</div>
+    </div>
+    <div class="footer all-padding">
+      <div class="desktop-float-left mobile-centered desktop-width-50 mobile-width-100 mobi-vertical-padding"> <a href="http://www.termsconditions.co.za" target="_blank">Terms &amp; conditions</a><br />
+        <a href="#" target="_blank" class="contact-us">Having trouble? Contact Us</a><br/>
+        <span class="blackberry-visible">If you&rsquo;re having trouble playing this game, try playing our <a href="#">feature phone game</a>!</span></div>
+      <div class="mobile-stretch-90 desktop-float-right mobile-centered mobi-vertical-padding"><img alt="" src="images/shoprite-logo.png" /></div>
+      <div class="clearfix">&nbsp;</div>
+    </div>
+  </div>
+  <!-- End Entry Form --> 
+  
+  <!-- Thanks -->  
+  <div class="page thanks">
+    <div class="bg-red vertical-padding">
+      <div class="image-stretch-60 centered mobile-stretch-90 "><img alt="" src="images/thanks.png" /></div>
+      <div class="image-stretch-50 centered mobile-stretch-70 centered show-enquiry"><img src="images/thanks-enquiry.png" /></div>
+      <div class="image-stretch-60 centered mobile-stretch-70 centered show-enter"><img src="images/entry-received.png" /></div>
+    </div>
+    <div class="bg-yellow all-padding">
+      <div class="desktop-float-left desktop-visible yellow-packet-small desktop-width-50"><img alt="" src="images/yellow-packet-small.png" /></div>
+      <div class="desktop-width-50 mobile-width-100 mobile-stretch-100 image-stretch-100 centered show-winner desktop-float-left "><img src="images/reference-number.png" /></div>
+      <div class="centered reference show-winner mobile-width-80 desktop-width-50 desktop-float-left">REFERENCE NUMBER</div>
+      <div class="desktop-width-50 show-loser mobile-width-100 desktop-float-right  right-align mobile-stretch-100 "><img src="images/lower-prices.png" /> </div>
+      <div class="vertical-padding">&nbsp;</div>
+      <div class="centered desktop-float-left centered desktop-width-50 mobile-width-100 button-thanks">
+        <div class="image-stretch-80 centered mobile-stretch-60"><img class="button play-again" src="images/button-play-again.png" /></div>
+        <div class="image-stretch-80  mobile-stretch-60"><img class="button challenge" src="images/button-challenge-friend.png" /></div>
+        <div class="image-stretch-80  mobile-stretch-60"><a target="_blank" href="http://www.shoprite.co.za/Pages/specials.aspx?utm_source=YellowPacketChallenge&utm_medium=WebGameButton&utm_campaign=YellowPacket"><img class="button top-scores" src="images/button-view-top-scores.png" /></a></div>
+      </div>
+      <div class="clearfix">&nbsp;</div>
+    </div>
+    <div class="footer all-padding">
+      <div class="desktop-float-left mobile-centered desktop-width-50 mobile-width-100 mobi-vertical-padding"> <img class="button fb-share" src="images/facebook.png" /><br />
+        <a href="http://www.termsconditions.co.za" target="_blank">Terms &amp; conditions</a><br />
+        <a href="#" target="_blank" class="contact-us">Having trouble? Contact Us</a><br/>
+        <span class="blackberry-visible">If you&rsquo;re having trouble playing this game, try playing our <a href="#">feature phone game</a>!</span></div>
+      <div class="mobile-stretch-90 desktop-float-right mobile-centered mobi-vertical-padding"><img alt="" src="images/shoprite-logo.png" /></div>
+      <div class="clearfix">&nbsp;</div>
+    </div>
+  </div>
+  <!-- End Thanks --> 
+  <!-- Contact Form -->
+  
+  <div class="page contact">
+    <div class="bg-red vertical-padding">
+      <div class="image-stretch-100 centered mobile-stretch-70"><img alt="" src="images/contact-us.png" /></div>
+      <div class="image-stretch-80 centered mobile-stretch-90"><img alt="" src="images/contact-details.png" /></div>
+    </div>
+    <!-- Start Form -->
+    <div class="bg-yellow vertical-padding">
+      <div class="contact-entry-form all-padding">
+        <div class="form-content desktop-width-80 mobile-width-90">
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">FIRST NAMES&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input id="firstname" type="text" />
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">SURNAME&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input id="surname" type="text" />
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">EMAIL ADDRESS&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input id="email" type="text" />
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">CELL NUMBER&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input id="cell" type="text" maxlength="10"/>
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">DEVICE&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input type="text" id="device" placeholder="eg. iPhone5S" />
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">BROWSER&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <input type="text" id="browser" placeholder="eg. Chrome"/>
+            </div>
+          </div>
+          <div class="form-wrapper vertical-padding">
+            <div class="form-label desktop-width-40 mobile-width-100 desktop-float-left">QUERY&nbsp;</div>
+            <div class="form-input desktop-width-60 mobile-width-100 desktop-float-right">
+              <textarea rows="3" ID="message" placeholder=""></textarea>
+              <div><strong>If you are contacting us regarding a prize, please include your reference number.</strong></div>
+            </div>
+          </div>
+          <div class="clearfix">&nbsp;</div>
+        </div>
+      </div>
+      <!-- End form -->
+      
+      <div class="image-stretch-30 mobile-stretch-50 centered"><img class="button submit-contact" src="images/submit.png" /></div>
+      <div class="image-stretch-25 mobile-stretch-40 centered"><img class="button submit-cancel" src="images/button-cancel.png" /></div>
+      <div class="mobile-width-80 desktop-width-80 form-errors centered all-padding">There was a problem with your message. Please complete the red boxes and resubmit.</div>
+    </div>
+    <div class="footer all-padding">
+      <div class="desktop-float-left mobile-centered desktop-width-50 mobile-width-100 mobi-vertical-padding"> <a href="http://www.termsconditions.co.za" target="_blank">Terms &amp; conditions</a><br />
+        <a href="#" target="_blank" class="contact-us">Having trouble? Contact Us</a><br/>
+        <span class="blackberry-visible">If you&rsquo;re having trouble playing this game, try playing our <a href="#">feature phone game</a>!</span></div>
+      <div class="mobile-stretch-90 desktop-float-right mobile-centered mobi-vertical-padding"><img alt="" src="images/shoprite-logo.png" /></div>
+      <div class="clearfix">&nbsp;</div>
+    </div>
+  </div>
+  <!-- End Contact Form --> 
+  
+  <!-- NoHTML5 -->
+  <div class="page nohtml5">
+    <div class="bg-red vertical-padding">
+      <div class="image-stretch-80 centered mobile-stretch-90"><img alt="" src="images/nohtml5-1.png" /></div>
+    </div>
+    <div class="bg-yellow vertical-padding">
+      <div class="image-stretch-80 centered mobile-stretch-90"><img alt="" src="images/nohtml5-2.png" /></div>
+      <div class="mobile-stretch-60 image-stretch-50 centered"> <img alt="" src="images/yellow-packet-small.png" /></div>
+    </div>
+    <div class="footer all-padding">
+      <div class="desktop-float-left mobile-centered desktop-width-50 mobile-width-100 mobi-vertical-padding"> <a href="http://www.termsconditions.co.za" target="_blank">Terms &amp; conditions</a><br />
+        <a href="#" target="_blank" class="contact-us">Having trouble? Contact Us</a><br/>
+        <span class="blackberry-visible">If you&rsquo;re having trouble playing this game, try playing our <a href="#">feature phone game</a>!</span></div>
+      <div class="mobile-stretch-90 desktop-float-right mobile-centered mobi-vertical-padding"><img alt="" src="images/shoprite-logo.png" /></div>
+      <div class="clearfix">&nbsp;</div>
+    </div>
+  </div>
+  <!-- End NoHTML5 --> 
+  
+</div>
+<!-- End chirpy code -->
+
+<script>
+  window.fbAsyncInit = function() {
+	FB.init({
+	  appId      : '491364564318870',
+	  xfbml      : true,
+	  version    : 'v2.3'
+	});
+  };
+
+  (function(d, s, id){
+	 var js, fjs = d.getElementsByTagName(s)[0];
+	 if (d.getElementById(id)) {return;}
+	 js = d.createElement(s); js.id = id;
+	 js.src = "//connect.facebook.net/en_US/sdk.js";
+	 fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script> 
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/modernizr-2.8.3.min.js" type="text/javascript"></script>
+<script src="js/music.js"></script>
+<script src="js/seamlessLoop.js"></script>
+<script src="js/md5.js"></script>
+<script src="js/blockrain.jquery.libs.js"></script>
+<script src="js/blockrain.jquery.src.js"></script>
+<script src="js/blockrain.jquery.themes.js"></script>
+<script src="js/yellowpacket.js"></script>
+<script src="js/scripts.js?version=4" type="text/javascript"></script>
+<script>
+
+</script>
+
+</body>
+</html>
